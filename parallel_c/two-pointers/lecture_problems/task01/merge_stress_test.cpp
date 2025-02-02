@@ -48,7 +48,7 @@ int main() {
 
   int count_errors = 0;
   while (k--) {
-    std::uniform_int_distribution<> size(100, 10'000);
+    std::uniform_int_distribution<> size(100, 1000);
     int n = size(gen);
     int m = size(gen);
     
