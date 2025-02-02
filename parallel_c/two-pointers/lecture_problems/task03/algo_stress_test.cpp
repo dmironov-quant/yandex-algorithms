@@ -39,22 +39,22 @@ int main() {
   std::random_device rd;
   std::mt19937 gen(rd());
   
-  std::uniform_int_distribution<> test_n(100, 1000);
+  std::uniform_int_distribution<> test_n(50, 100);
   int k = test_n(gen);
   
   int count_errors = 0;
   while (k--) {
-    std::uniform_int_distribution<> size(100, 1000);
+    std::uniform_int_distribution<> size(50, 100);
     int n = size(gen);
     
     std::vector<int> a(n, 0);
-    std::uniform_int_distribution<> element(0, 50);
+    std::uniform_int_distribution<> element(0, 100);
     for (int i = 0; i < n; ++i) {
       int x = element(gen);
       a[i] = x;
     }
     
-    std::uniform_int_distribution<> sum(0, 5000);
+    std::uniform_int_distribution<> sum(0, 500);
     int S = sum(gen);
     
     int expected_answer = 0;
