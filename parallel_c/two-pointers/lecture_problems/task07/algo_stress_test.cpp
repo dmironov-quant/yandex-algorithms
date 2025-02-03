@@ -49,7 +49,7 @@ int main() {
   std::random_device rd;
   std::mt19937 gen(rd());
   
-  std::uniform_int_distribution<> test_n(1, 2);
+  std::uniform_int_distribution<> test_n(50, 100);
   int k = test_n(gen);
   
   int count_errors = 0;
