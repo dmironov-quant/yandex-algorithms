@@ -1,3 +1,5 @@
+// https://informatics.msk.ru/mod/statements/view.php?id=40319&chapterid=111975#1
+
 #include <iostream>
 #include <vector>
 #include <cstdint>
