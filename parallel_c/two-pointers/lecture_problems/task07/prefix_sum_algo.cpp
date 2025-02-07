@@ -10,7 +10,6 @@
 
 #include <iostream>
 #include <vector>
-#include <random>
 
 
 int prefix_sum_algo(std::vector<int>& a) {
