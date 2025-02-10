@@ -8,6 +8,7 @@
 // It is allowed to return select empty subarray.
 // The answer is then 0
 
+
 #include <iostream>
 #include <vector>
 
