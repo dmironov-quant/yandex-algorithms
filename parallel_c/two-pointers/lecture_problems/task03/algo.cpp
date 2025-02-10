@@ -9,8 +9,6 @@
 
 #include <iostream>
 #include <vector>
-#include <random>
-#include <algorithm>
 
 
 int algo(std::vector<int>& a, int S) {
