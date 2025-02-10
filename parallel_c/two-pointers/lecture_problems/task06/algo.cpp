@@ -8,12 +8,8 @@
 // Will output the length
 
 
-#include <iostream>
 #include <vector>
-#include <random>
 #include <unordered_map>
-#include <algorithm>
-#include <cassert>
 
 
 int algo(std::vector<int>& a, int K) {
