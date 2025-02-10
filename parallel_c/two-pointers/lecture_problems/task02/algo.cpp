@@ -5,8 +5,7 @@
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <random>
+
 
 std::vector<int> algo(std::vector<int>& a, std::vector<int>& b) {
   int n = static_cast<int>(a.size());
