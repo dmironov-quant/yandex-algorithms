@@ -8,10 +8,8 @@
 // It is allowed to return select empty subarray.
 // The answer is then 0
 
-#include <iostream>
-#include <vector>
-#include <random>
 
+#include <vector>
 
 
 int kadane_algo(std::vector<int>& a) {
