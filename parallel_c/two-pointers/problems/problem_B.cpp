@@ -35,43 +35,37 @@ int main() {
     sort(begin(selected), end(selected));
     int ans = selected.back() - selected[0];
     
-    int j = 0, k = 0, l = 0;
+    int i = 0, j = 0, k = 0, l = 0;
     int best_i = 0, best_j = 0, best_k = 0, best_l = 0;
-    for (int i = 0; i < n1; ++i) {
-        int target = a[i];
-        
-        while (j < n2 && b[j] < target) {
-            ++j;
-        }
-        if ( j > 0 && abs(b[j - 1] - target) < abs(b[j] - target) ) {
-            --j;
-        }
-        
-        while (k < n3 && c[k] < target) {
-            ++k;
-        }
-        if ( k > 0 && abs(c[k - 1] - target) < abs(c[k] - target) ) {
-            --k;
-        }
-        
-        while (l < n4 && d[l] < target) {
-            ++l;
-        }
-        if ( l > 0 && abs(d[l - 1] - target) < abs(d[l] - target) ) {
-            --l;
-        }
-        
+
+    while (i < n1 && j < n2 && k < n3 && l < n4) {
         vector<int> candidates{ a[i], b[j], c[k], d[l] };
         sort(begin(candidates), end(candidates));
         int curr = candidates.back() - candidates[0];
         
         if (curr < ans) {
-            ans = curr;
+            curr = ans;
             best_i = i;
             best_j = j;
             best_k = k;
             best_l = l;
         }
+        
+        int min_ = *min_element(begin(candidates), end(candidates));
+        
+        while (i < n1 && a[i] == min_) {
+            ++i;
+        }
+        while (j < n2 && b[j] == min_) {
+            ++j;
+        }
+        while (k < n3 && c[k] == min_) {
+            ++k;
+        }
+        while (l < n4 && d[l] == min_) {
+            ++l;
+        }
+        
     }
     
     cout << a[best_i] << " " 
