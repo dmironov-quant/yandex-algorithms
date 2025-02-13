@@ -44,7 +44,7 @@ int main() {
         int curr = candidates.back() - candidates[0];
         
         if (curr < ans) {
-            curr = ans;
+            ans = curr;
             best_i = i;
             best_j = j;
             best_k = k;
