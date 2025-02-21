@@ -1,5 +1,5 @@
 // problem F: Провода
-
+// https://informatics.msk.ru/mod/statements/view.php?chapterid=672#1
 
 #include <iostream>
 #include <vector>
