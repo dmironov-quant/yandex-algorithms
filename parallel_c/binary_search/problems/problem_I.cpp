@@ -1,4 +1,4 @@
-
+// https://informatics.msk.ru/mod/statements/view.php?id=1966#1
 // Задача I: Дипломы
 
 #include <iostream>

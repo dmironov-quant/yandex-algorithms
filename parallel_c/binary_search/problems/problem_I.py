@@ -1,3 +1,6 @@
+# https://informatics.msk.ru/mod/statements/view.php?id=1966#1
+# Задача I: Дипломы 
+
 w, h, n = map(int, input().split())
 
 
