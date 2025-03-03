@@ -18,8 +18,6 @@
 #include <algorithm>
 using namespace std;
 
-const double EPS = 1e-50;
-
 struct Item {
   int idx; // idx in original array, starts with 1
   int cost;
@@ -74,7 +72,7 @@ int main() {
     double knapsack_value = 0;
     double knapsack_weight = 0;
     int i = 0;
-    while (i < n && static_cast<double>(W) - items[i].weight > EPS) {
+    while (i < n && W - items[i].weight > 0) {
         selected_items.push_back(items[i].idx);
         parts.push_back(1);
         knapsack_value += items[i].cost;
