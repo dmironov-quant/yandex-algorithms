@@ -1,5 +1,5 @@
 // Задача С: Гистограмма 
-
+// https://informatics.msk.ru/mod/statements/view.php?chapterid=111253#1
 
 #include <iostream>
 #include <vector>
@@ -129,51 +129,3 @@ int main() {
     
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
